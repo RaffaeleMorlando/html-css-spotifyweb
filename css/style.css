@@ -10,7 +10,7 @@
 /* GENERAL SETTINGS */
 a {
   text-decoration: none;
-  color: #fff;
+  color: #b3b3b3
 }
 li {
   padding: 10px 0;
@@ -66,11 +66,16 @@ li {
   max-width: 70%; /*CHANGE THIS LATER */
 }
 
-/* -Navbar Pages Select */
+/* -Navbar Pages Selection */
 .root_nav .nav_pages_selection {
   margin-bottom: 20px;
 }
-.root_nav .nav_pages_selection  ul{
+.root_nav .nav_pages_selection li a {
+ display: flex;
+ align-items: center;
+}
+.root_nav .nav_pages_selection li a div:last-child {
+  padding-left: 10px;
 }
 
 /* -Navbar Playslist */
@@ -101,11 +106,12 @@ li {
   align-items: center;
   width: 50px;
   height: 50px;
-  color: black;
-  background-color: #FFFFFF;
+  background-color: #b3b3b3
+
 }
 .root_nav .nav_playlist .playlist_add .button_playlist_add span {
-  color: #fff;
+  color: #b3b3b3;
+  font-weight: 600;
   padding-left: 10px;
 }
 
@@ -130,7 +136,7 @@ li {
   font-size: 15px;
   padding: 10px 0;
   border-bottom: 1px solid gray;
-  color: #fff;
+  color: #b3b3b3
 }
 .root_nav .nav_account .account_profile {
   display: flex;
