@@ -21,11 +21,17 @@ li {
   list-style: none;
 }
 
+.visible {
+  display: inline-block;
+}
+
 .container_root {
   width: 100%;
   height: 100vh;
 }
-/* root level 1 */
+
+/* ROOT */
+
 .root_top {
   display: flex;
   width: 100%;
@@ -35,7 +41,8 @@ li {
   width: 100%;
   height: 90px;
 }
-/* root level 2 */
+/* ROOT - FIRST LEVEL */
+
 .root_nav {
   width: 240px;
   height: 100%;
@@ -63,7 +70,7 @@ li {
 }
 /* -Navbar Logo */
 .root_nav .nav_logo {
-  width: 100%;
+  width: 70%;
   margin-bottom: 20px;
 }
 .root_nav .nav_logo .spotify_logo {
@@ -84,6 +91,7 @@ li {
 .root_nav .nav_pages_selection li a div:last-child {
   padding-left: 10px;
 }
+
 
 /* -Navbar Playslist */
 .root_nav .nav_playlist {
@@ -164,9 +172,19 @@ li {
   font-size: 20px;
 }
 
-
-
-
+/* CTA */
+.main_cta_bar {
+  position: fixed;
+  right: 0;
+  top:0;
+  width: calc(100% - 240px);
+  height: 80px;
+  background-color: #070707;
+  z-index: 1;
+}
+.main_content_section {
+  overflow: hidden;
+}
 
 @media screen and (max-width: 767px) {
 
@@ -176,28 +194,31 @@ li {
   .root_main_view{
     width: calc(100% - 50px);
   }
+  .visible {
+    display: none;
+  }
 
   /* NAVBAR */
+
   .root_nav nav {
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: relative;
     width: 100%;
     height: 100%;
     padding: 5px;
   }
-
   .root_nav .nav_logo {
-    width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
-
-  .root_nav .nav_logo .spotify_logo {
-    display: none;
-  }
-
   .root_nav .nav_logo .spotify_logo_no_text {
     display: inline-block;
     width: 100%;
   }
+
+  .root_nav .nav_account .install_app_section {
+    border-bottom: 0;
+  }
+
 }
