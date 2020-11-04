@@ -71,14 +71,11 @@ li {
   margin-bottom: 20px;
 }
 .root_nav .nav_pages_selection  ul{
-  border: 1px solid white;
 }
 
 /* -Navbar Playslist */
 .root_nav .nav_playlist {
   width: 100%;
-  border: 1px solid white;
-  height: 400px;
 }
 
 .root_nav .nav_playlist h1 {
@@ -90,14 +87,12 @@ li {
 .root_nav .nav_playlist .playlist_add {
   width: 100%;
   padding: 20px 0;
-  border: 1px solid red;
 }
 
 .root_nav .nav_playlist .playlist_add .button_playlist_add {
   display: flex;
   align-items: center;
   width: 100%;
-  border: 1px solid blue;
 }
 
 .root_nav .nav_playlist .playlist_add .button_playlist_add .button_plus {
@@ -115,6 +110,7 @@ li {
 }
 
 .root_nav .nav_playlist .playlist_names {
+  margin-bottom: 20px;
   overflow: scroll;
 }
 
@@ -126,14 +122,13 @@ li {
   padding: 0 10px;
 }
 .root_nav .nav_account span {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 .root_nav .nav_account .install_app_section {
   display: flex;
   font-size: 15px;
   padding: 10px 0;
   color: #fff;
-  border-bottom: 1px solid white;
 }
 .root_nav .nav_account .account_profile {
   display: flex;
