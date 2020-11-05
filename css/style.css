@@ -46,12 +46,16 @@ li {
 .root_nav {
   width: 240px;
   height: 100%;
+  min-height: 480px;
+  padding: 15px;
+  overflow: hidden;
   background-color: #040404;
 }
 .root_main_view{
   width: calc(100% - 240px);
   height: 100%;
   background-color: #131313;
+  overflow: auto;
 }
 .root_player {
   width: 100%;
@@ -61,69 +65,76 @@ li {
 
 /* NAVBAR */
 
-.root_nav nav {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 15px;
+.nav_top {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 90px);
   overflow: hidden;
 }
+.nav_bottom {
+  height: 90px;
+}
+
 /* -Navbar Logo */
-.root_nav .nav_logo {
+.nav_logo {
   width: 70%;
   margin-bottom: 20px;
 }
-.root_nav .nav_logo .spotify_logo {
-  max-width: 100%; /*CHANGE THIS LATER */
+.spotify_logo {
+  max-width: 100%;
 }
-.root_nav .nav_logo .spotify_logo_no_text {
+.spotify_logo_no_text {
   display: none;
 }
 
 /* -Navbar Pages Selection */
-.root_nav .nav_pages_selection {
+
+.nav_pages_selection {
   margin-bottom: 20px;
 }
-.root_nav .nav_pages_selection li a {
+.nav_pages_selection li a {
  display: flex;
  align-items: center;
 }
-.root_nav .nav_pages_selection li a div:last-child {
+.nav_pages_selection li a div:last-child {
   padding-left: 10px;
 }
 
 
 /* -Navbar Playslist */
-.root_nav .nav_playlist {
+
+.nav_playlist {
   width: 100%;
+  overflow: hidden;
 }
 
-.root_nav .nav_playlist h1 {
+.nav_playlist h1 {
   font-size: 18px;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.root_nav .nav_playlist .playlist_add {
+.playlist_add {
   width: 100%;
   padding: 20px 0;
 }
 
-.root_nav .nav_playlist .playlist_add .button_playlist_add {
+.button_playlist_add {
   display: flex;
   align-items: center;
   width: 100%;
 }
-.root_nav .nav_playlist .playlist_add .button_playlist_add:hover .button_plus {
+
+.button_playlist_add:hover .button_plus {
   background-color: #fff;
   cursor: pointer;
 }
-.root_nav .nav_playlist .playlist_add .button_playlist_add:hover span {
+.button_playlist_add:hover span {
   color: #fff;
   cursor: pointer;
 }
 
-.root_nav .nav_playlist .playlist_add .button_playlist_add .button_plus {
+.button_plus {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,45 +143,45 @@ li {
   color: black;
   background-color: #b3b3b3
 }
-.root_nav .nav_playlist .playlist_add .button_playlist_add span {
+.button_playlist_add span {
   color: #b3b3b3;
   font-weight: 600;
   padding-left: 10px;
 }
 
-.root_nav .nav_playlist .playlist_names {
+.playlist_names {
   margin-bottom: 20px;
-  overflow: scroll;
+  height: 60%;
+  overflow-y: auto;
 }
 
 /* -Navbar Account */
 
-.root_nav .nav_account {
-  position: absolute;
+.nav_account {
   width: calc(100% - 30px);
-  bottom: 0;
   background-color: #040404;
 }
-.root_nav .nav_account span {
+.nav_account span {
   padding-left: 10px;
 }
-.root_nav .nav_account .install_app_section {
+.install_app_section {
   display: flex;
   font-size: 15px;
   padding: 10px 0;
   border-bottom: 1px solid gray;
   color: #b3b3b3
 }
-.root_nav .nav_account .account_profile {
+.account_profile {
   display: flex;
   font-size: 15px;
   padding: 10px 0;
   color: #fff;
 }
-.root_nav .nav_account .account_profile i,
-.root_nav .nav_account .install_app_section i {
+.account_profile i,
+.install_app_section i {
   font-size: 20px;
 }
+
 
 /* CTA */
 .main_cta_bar {
@@ -189,7 +200,7 @@ li {
 @media screen and (max-width: 767px) {
 
   .root_nav {
-    width: 50px;
+    max-width: 50px;
   }
   .root_main_view{
     width: calc(100% - 50px);
@@ -200,7 +211,7 @@ li {
 
   /* NAVBAR */
 
-  .root_nav nav {
+  .root_nav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,14 +220,20 @@ li {
     height: 100%;
     padding: 5px;
   }
+
   .root_nav .nav_logo {
     margin-bottom: 0;
   }
-  .root_nav .nav_logo .spotify_logo_no_text {
-    display: inline-block;
-    width: 100%;
-  }
 
+  .spotify_logo_no_text {
+    display: inline-block;
+    width: 80%;
+  }
+  .nav_pages_selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .root_nav .nav_account .install_app_section {
     border-bottom: 0;
   }
