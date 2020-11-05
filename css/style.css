@@ -189,13 +189,66 @@ li {
   right: 0;
   top:0;
   width: calc(100% - 240px);
-  height: 80px;
-  background-color: #070707;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.89);
   z-index: 1;
 }
+.upgrade_premium {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+.upgrade_premium a {
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 10px 30px;
+  margin-right: 20px;
+}
+.upgrade_premium a:hover {
+  transform: scale(1.1);
+}
+
+
+/* MAIN CONTENT */
+
 .main_content_section {
   overflow: hidden;
+  margin-top: 90px;
+  padding: 20px 20px;
+  border: 1px solid red;
 }
+
+
+
+.debug_mini-box_test ul {
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  flex: wrap
+}
+.debug_mini-box_test li {
+  padding: 10px 20px;
+  font-size: 50px;
+}
+
+
+
+.debug_box_test {
+  height: 200px;
+  border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIA XS */
 
 @media screen and (max-width: 767px) {
 
@@ -236,6 +289,11 @@ li {
   }
   .root_nav .nav_account .install_app_section {
     border-bottom: 0;
+  }
+
+  /* CTA */
+  .main_cta_bar {
+    width: calc(100% - 50px);
   }
 
 }
