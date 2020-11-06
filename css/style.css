@@ -102,6 +102,12 @@ span {
   padding-left: 10px;
 }
 
+/* GREEN LINE */
+.nav_pages_selection > ul::after {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
 
 /* -Navbar Playslist */
 
@@ -245,9 +251,12 @@ span {
   color: #fff;
 }
 
+.upgrade_premium a:hover {}
+
 .content_bar {
   width: 100%;
   text-align: center;
+  margin-bottom: 20px;
 }
 .content_bar ul {}
 
