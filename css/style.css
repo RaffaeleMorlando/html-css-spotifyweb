@@ -513,13 +513,13 @@ span {
 }
 
 
-.player_loading_bar:hover .fas.fa-circle {
+.player_loading_bar .fas.fa-circle {
   position: absolute;
   top: 50%;
   left: 20%;
   transform: translateY(-50%);
 }
-.volume_line:hover .fas.fa-circle {
+.volume_line .fas.fa-circle {
   position: absolute;
   top: 50%;
   left: 60%;
