@@ -103,10 +103,15 @@ span {
 }
 
 /* GREEN LINE */
-.nav_pages_selection > ul::after {
-  width: 10px;
-  height: 10px;
-  background-color: red;
+.nav_pages_selection li:first-child::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  padding: 2px;
+  background-color: rgb(73, 251, 0);
+  margin: -2px -15px;
+  height: 30px;
+}
 }
 
 /* -Navbar Playslist */
@@ -329,6 +334,10 @@ span {
   opacity: 0.5;
   transition: 0.4s ease;
 }
+
+
+/* PLAYER */
+
 
 
 /* MEDIA MD */
