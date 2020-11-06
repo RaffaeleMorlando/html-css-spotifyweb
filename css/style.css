@@ -251,7 +251,9 @@ span {
   color: #fff;
 }
 
-.upgrade_premium a:hover {}
+.upgrade_premium a:hover {
+  transform: scale(1.5);
+}
 
 .content_bar {
   width: 100%;
