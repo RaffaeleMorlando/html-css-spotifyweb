@@ -513,7 +513,7 @@ span {
 }
 
 /* POINTER PLAYER BAR */
-.player_loading_bar:hover .invisible {
+/* .player_loading_bar:hover .invisible {
   display: inline-block;
   position: absolute;
   top: 0;
@@ -521,6 +521,14 @@ span {
   color: red;
   font-size: 10px;
   cursor: pointer;
+} */
+
+.player_loading_bar:hover .fas.fa-circle {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
 }
 
 .volume_line:hover::after {
