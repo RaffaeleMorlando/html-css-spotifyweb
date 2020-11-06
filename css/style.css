@@ -21,13 +21,17 @@ i:hover {
   cursor: pointer;
 }
 
+i.fas.fa-plus:hover {
+  color: #000;
+}
+
 li {
   padding: 10px 0;
   list-style: none;
 }
 
 h3 {
-  margin-top: 10px;  
+  margin-top: 10px;
 }
 
 p,
@@ -222,35 +226,6 @@ span {
 }
 
 
-/* CTA */
-
-/* .main_cta_bar {
-  position: fixed;
-  right: 0;
-  top:0;
-  width: calc(100% - 240px);
-  height: 90px;
-  background-color: rgba(0, 0, 0, 0.89);
-  z-index: 1;
-}
-.upgrade_premium {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 100%;
-}
-.upgrade_premium a {
-  border: 2px solid white;
-  border-radius: 50px;
-  padding: 10px 30px;
-  margin-right: 20px;
-}
-.upgrade_premium a:hover {
-  transform: scale(1.1);
-  transition: 0.4s ease-in-out;
-} */
-
-
 /* MAIN */
 
 .main_view{
@@ -310,6 +285,9 @@ span {
 .title_block span {
   font-size: 10px;
 }
+.title_block span:hover {
+  text-decoration: underline;
+}
 
 .recently,
 .for_you,
@@ -349,17 +327,32 @@ span {
   border-radius: 100%;
 }
 
+/* overlay */
 
-.layover {
+.overlay {
   position: relative;
   width: 100%;
-  height: 100%;
 }
 
-.recently .block img:hover  {
-  opacity: 0.5;
-  transition: 0.4s ease;
+.overlay > i.far.fa-play-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 30px;
+  color: #fff;
+  /* display: none; */
 }
+
+.wrapper:hover   {
+  display: block;
+  opacity: 0.2;
+}
+
+/* /overlay */
+
+
+
 
 
 /* PLAYER */
