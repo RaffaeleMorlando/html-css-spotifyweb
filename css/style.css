@@ -269,72 +269,68 @@ span {
   font-size: 10px;
 }
 
-.recently {
-  margin-bottom: 30px;
-  color: #fff;
-}
-
-.recently .container_blocks {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  text-align: center;
-}
-.recently .block {
-  width: calc((100% / 6) - 10px);
-  margin-left: 10px;
-  margin-top: 10px;
-}
-.recently .block:first-of-type {
-  margin-left: 0;
-}
-
-.recently .block img {
-  width: 100%;
-}
-
-
-.for_you {
-  margin-bottom: 30px;
-  color: #fff;
-}
-
-.for_you .container_blocks {
-  display: flex;
-  text-align: center;
-}
-.for_you .block {
-  width: calc((100% / 6) - 10px);
-  margin-left: 10px;
-  margin-top: 10px;
-}
-.for_you .block:first-of-type {
-  margin-left: 0;
-}
-.for_you .block img {
-  width: 100%;
-}
-
-
+.recently,
+.for_you,
 .popular {
   margin-bottom: 30px;
   color: #fff;
 }
+
+.recently .container_blocks,
+.for_you .container_blocks,
 .popular .container_blocks {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
 }
+.recently .block,
+.for_you .block,
 .popular .block {
+  position: relative;
   width: calc((100% / 6) - 10px);
   margin-left: 10px;
   margin-top: 10px;
 }
+.recently .block:first-of-type,
+.for_you .block:first-of-type,
 .popular .block:first-of-type {
   margin-left: 0;
 }
+
+.recently .block img,
+.for_you .block img {
+  width: 100%;
+}
+
 .popular .block img {
   width: 100%;
   border-radius: 100%;
+}
+
+
+.layover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.recently .block img:hover  {
+  opacity: 0.5;
+  transition: 0.4s ease;
+}
+
+
+/* MEDIA MD */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  .recently .block,
+  .for_you .block,
+  .popular .block {
+    width: calc((100% / 4) - 10px);
+    margin-left: 10px;
+    margin-top: 10px;
+  }
 }
 
 
@@ -385,6 +381,14 @@ span {
   /* CTA */
   .main_cta_bar {
     width: calc(100% - 50px);
+  }
+
+  .recently .block,
+  .for_you .block,
+  .popular .block {
+    width: calc((100% / 2) - 10px);
+    margin-left: 10px;
+    margin-top: 10px;
   }
 
 }
