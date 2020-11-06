@@ -102,15 +102,19 @@ span {
   padding-left: 10px;
 }
 
+.active {
+  color: #fff;
+}
+
 /* GREEN LINE */
 .nav_pages_selection li:first-child::before {
   content: "";
   position: absolute;
   width: 1px;
-  padding: 2px;
+  padding: 1px;
   background-color: rgb(73, 251, 0);
-  margin: -2px -15px;
-  height: 30px;
+  margin: -7px -15px;
+  height: 40px;
 }
 }
 
