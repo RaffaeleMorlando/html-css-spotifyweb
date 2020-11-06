@@ -26,6 +26,10 @@ li {
   list-style: none;
 }
 
+h3 {
+  margin-top: 10px;  
+}
+
 p,
 span {
   color: #b3b3b3;
@@ -518,12 +522,19 @@ span {
   top: 50%;
   left: 20%;
   transform: translateY(-50%);
+  display: none;
 }
-.volume_line .fas.fa-circle {
+.volume_line .fas.fa-circle{
   position: absolute;
   top: 50%;
   left: 60%;
   transform: translateY(-50%);
+  display: none;
+}
+
+.player_loading_bar:hover .fas.fa-circle,
+.volume_line:hover .fas.fa-circle {
+  display: block;
 }
 
 .volume_line:hover::after {
