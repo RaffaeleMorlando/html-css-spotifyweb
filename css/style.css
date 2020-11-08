@@ -423,10 +423,15 @@ span {
 
 .info_icons {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 30%;
   height: 100%;
+}
+
+.info_icons i {
+  padding: 10px;
 }
 
 
@@ -697,10 +702,6 @@ span {
     align-items: center;
     width: 30%;
     height: 100%;
-  }
-  .info_icons i:first-child {
-
-    margin-bottom: 10px;
   }
 
 }
