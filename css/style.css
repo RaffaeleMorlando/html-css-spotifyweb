@@ -298,7 +298,7 @@ span {
   justify-content: space-between;
 }
 .title_block span {
-  font-size: 10px;
+  font-size: 12px;
 }
 .title_block span:hover {
   text-decoration: underline;
